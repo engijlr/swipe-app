@@ -1,7 +1,7 @@
 :root {
   /*Text color*/
   --text-dark: #000;
-  --text-light: #fff;
+  --text-light: rgb(255, 255, 255);
   --text-grey: #adbdcc;
 
   /*Font Family*/
@@ -30,6 +30,7 @@
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
+  --standard-width: 1300px;
 
   /*Brand Colors*/
   --purple-1: #6962f7;
@@ -40,16 +41,20 @@
   --bg-white: #fff;
   --bg-light: #f7f9fc;
 }
-
-body {
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: var(--body-font);
   color: var(--text-dark);
   width: 100%;
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
+  background-color: var(--blue-1);
 }
-
 h1 {
   font-family: var(--heading-font);
   font-weight: 600;
@@ -75,7 +80,6 @@ h3 {
   margin: 0;
   width: 100%;
 }
-
 h4 {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -84,7 +88,6 @@ h4 {
   width: 100%;
   letter-spacing: 0.25px;
 }
-
 h5 {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -92,7 +95,6 @@ h5 {
   margin: 0;
   width: 100%;
 }
-
 h6 {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -100,14 +102,12 @@ h6 {
   margin: 0;
   width: 100%;
 }
-
 a {
   text-decoration: none;
   color: var(--purple-1);
   font-weight: 500;
   transition: color 0.25s ease;
 }
-
 a:hover {
   color: var(--primary-accent);
 }
@@ -118,6 +118,35 @@ p {
   margin: var(--spacing-md) 0;
 }
 
+/* Layout Styles */
+.section-container {
+  width: 100%;
+  max-width: var(--standard-width);
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.two-column > .col-left,
+.two-column > .col-right {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.two-column > .col-right {
+  padding: 0 0 0 var(--spacing-md);
+}
 .subtitle,
 .subtitle2 {
   color: var(--purple-1);
@@ -129,7 +158,6 @@ p {
 .subtitle2 {
   color: var(--blue-1);
 }
-
 .secondary-text {
   font-size: var(--secondary-text-size);
   line-height: var(--secondary-text-height);
@@ -159,8 +187,18 @@ p {
   background-color: var(--primary-button-hover);
   cursor: pointer;
 }
-
 .secondary-button:hover {
   opacity: 0.75;
   cursor: pointer;
+}
+.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.with-icon > img {
+  transition: transform 0.25s ease;
+}
+.with-icon:hover > img {
+  transform: translateX(4px);
 }

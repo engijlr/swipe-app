@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+}
+
+.navbar .links-section {
+  display: flex;
+  color: var(--text-light);
+}
+
+.navbar .links-section > a {
+  color: var(--text-light);
+  margin: 0 var(--spacing-md);
+  font-weight: bold;
+}
+.navbar .links-section > a:hover {
+  text-decoration: underline;
+}
+
+.navbar .navbar-btn {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--text-light);
+}
+.navbar .navbar-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
