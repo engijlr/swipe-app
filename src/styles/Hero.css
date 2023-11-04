@@ -1,0 +1,35 @@
+.hero {
+  margin: var(--spacing-xl) 0;
+}
+.hero p {
+  width: 80%;
+  font-weight: 500;
+}
+.hero-btns {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+.hero-btns > button:nth-of-type(2) {
+  color: var(--purple-2);
+}
+
+.hero .hero-phone {
+  height: 564px;
+}
+
+.hero .hero-phone > img {
+  height: 628px;
+  align-self: flex-end;
+  transform: translate(45px, -32px);
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.partners > img {
+  width: 100%;
+}
