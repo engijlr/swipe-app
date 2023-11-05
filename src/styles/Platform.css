@@ -1,0 +1,44 @@
+.platform {
+  padding: var(--spacing-xl) 0;
+}
+
+.platform > h2 {
+  width: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.platform > button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+
+.platform > button:hover {
+  background-color: var(--primary-accent);
+}
+
+.platform-images {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-areas:
+    "card invoice invoice"
+    "phone invoice invoice"
+    "phone dash dash"
+    "phone dash dash";
+  padding: var(--spacing-lg) 0;
+}
+.platform-images > img {
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+#card {
+  grid-area: card;
+}
+#invoice {
+  grid-area: invoice;
+}
+#phone {
+  grid-area: phone;
+}
+#dash {
+  grid-area: dash;
+}

@@ -3,7 +3,6 @@
 }
 .hero p {
   width: 80%;
-  font-weight: 500;
 }
 .hero-btns {
   display: flex;
@@ -27,9 +26,11 @@
 .partners {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
+  padding: 0 0 var(--spacing-xl) 0;
 }
 
 .partners > img {
-  width: 100%;
+  width: 70%;
+  place-self: center;
 }
