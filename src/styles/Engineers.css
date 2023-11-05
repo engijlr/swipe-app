@@ -1,0 +1,33 @@
+.engineers {
+  padding: var(--spacing-xl) 0;
+}
+.engineers h2 {
+  width: 80%;
+}
+.text-container > section {
+  margin: var(--spacing-lg) 0;
+}
+.text-container > button {
+  background-color: var(--blue-1);
+  color: var(--primary-accent);
+  margin: var(--spacing-md) 0;
+}
+.text-container > button:hover {
+  background-color: var(--bg-white);
+}
+.text-container .products > div > button {
+  color: var(--blue-1);
+  padding: 0;
+}
+.text-container .products > div > p {
+  width: 85%;
+}
+
+.engineers .code-images-container {
+  gap: var(--spacing-md);
+}
+
+.engineers .code-images-container > img {
+  width: 85%;
+  border-radius: 20px;
+}
