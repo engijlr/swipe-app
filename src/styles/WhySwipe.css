@@ -1,0 +1,13 @@
+.why-swipe {
+  margin: var(--spacing-xl) 0;
+}
+
+.why-swipe > section {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+.why-swipe .card .secondary-text {
+  color: var(--text-dark);
+}
