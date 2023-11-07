@@ -1,0 +1,41 @@
+.global {
+  background-color: var(--primary-accent);
+  color: var(--text-light);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--spacing-xl) * 2) 0;
+  position: relative;
+}
+
+.global h2 {
+  width: 80%;
+}
+.global a {
+  color: var(--blue-1);
+}
+.global a:hover {
+  color: var(--text-light);
+}
+
+.global .global-map > img {
+  position: absolute;
+  top: 5%;
+  width: 844px;
+  opacity: 25%;
+}
+
+.global .statistics {
+  display: flex;
+  margin: calc(var(--spacing-xl) * 2) 0;
+}
+.statistics h3 {
+  border-left: 3px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 28px;
+}
+.statistics p {
+  width: 85%;
+}
