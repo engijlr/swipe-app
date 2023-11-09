@@ -1,0 +1,67 @@
+.virtual-events {
+  padding: calc(var(--spacing-lg) * 2) 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-lg) * 5);
+}
+
+.virtual-events .primary-button {
+  background-color: var(--purple-1);
+}
+.virtual-events .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+.virtual-events .secondary-button {
+  color: var(--purple-2);
+  padding: 0;
+}
+
+.session-card {
+  box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.session-card .swipe-session {
+  padding: var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.swipe-session::before {
+  content: "";
+  background: var(--primary-gradient);
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  top: -40%;
+  transform: skewY(-5deg);
+}
+.session-card .session-text {
+  padding: var(--spacing-xl);
+  position: relative;
+}
+
+.swipe-session > img {
+  width: 80%;
+  z-index: 5;
+}
+
+.session-card .secondary-text {
+  width: 50%;
+  margin: var(--spacing-sm) 0;
+  color: var(--dark-text);
+}
+
+#girl-icon {
+  width: 60px;
+  position: absolute;
+  top: 0;
+}
+
+#boy-icon {
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
