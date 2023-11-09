@@ -9,8 +9,8 @@ import "../styles/Events.css";
 
 function Events() {
   return (
-    <section className="virtual-events section-container">
-      <div className="two-column">
+    <section className="virtual-events">
+      <div className="two-column  section-container">
         <div className="col-left">
           <p className="subtitle">Virtual events</p>
           <h2>Check out Sessions now!</h2>
@@ -41,7 +41,7 @@ function Events() {
           </div>
         </div>
       </div>
-      <div className="two-column">
+      <div className="two-column section-container">
         <div className="col-left">
           <h2>What are you waiting for?</h2>
           <p>

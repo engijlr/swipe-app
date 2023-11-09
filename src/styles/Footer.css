@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl) 0;
+}
+.footer .section-container {
+  display: flex;
+  justify-content: center;
+}
+.footer a {
+  color: var(--text-dark);
+}
+.footer a:hover {
+  color: var(--purple-1);
+  text-decoration: underline;
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 25%;
+}
+.footer .col > img {
+  width: 30%;
+  margin: 0 0 var(--spacing-md) 0;
+}
+.footer .col > h6 {
+  font-weight: 700;
+}

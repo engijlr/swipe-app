@@ -1,6 +1,7 @@
 import "./App.css";
 import Engineers from "./components/Engineers";
 import Events from "./components/Events";
+import Footer from "./components/Footer";
 import Global from "./components/Global";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,7 @@ function App() {
       <WhySwipe />
       <Global />
       <Events />
+      <Footer />
     </>
   );
 }

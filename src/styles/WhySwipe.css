@@ -1,5 +1,5 @@
 .why-swipe {
-  margin: var(--spacing-xl) 0;
+  padding: calc(var(--spacing-xl) * 4) 0;
 }
 
 .why-swipe > section {

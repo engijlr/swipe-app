@@ -7,8 +7,8 @@ import "../styles/Platform.css";
 
 function Platform() {
   return (
-    <>
-      <section className="platform section-container">
+    <section className="platform">
+      <div className=" section-container">
         <p className="subtitle">Unified platform</p>
         <h2>All the payment products you'll ever need</h2>
         <section className="two-column">
@@ -36,14 +36,14 @@ function Platform() {
           Start now
           <BsArrowRight />
         </button>
-      </section>
+      </div>
       <section className="platform-images section-container">
         <img src={card} alt="credit card" id="card" />
         <img src={invoice} alt="slack invoice" id="invoice" />
         <img src={phone} alt="phone" id="phone" />
         <img src={dash} alt="dashboard page" id="dash" />
       </section>
-    </>
+    </section>
   );
 }
 

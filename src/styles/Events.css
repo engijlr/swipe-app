@@ -1,8 +1,12 @@
 .virtual-events {
-  padding: calc(var(--spacing-lg) * 2) 0;
+  padding: calc(var(--spacing-xl) * 2) 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: calc(var(--spacing-lg) * 5);
+  z-index: 1;
+  background-color: var(--bg-white);
+  width: 100%;
 }
 
 .virtual-events .primary-button {

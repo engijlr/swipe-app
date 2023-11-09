@@ -1,5 +1,20 @@
 .hero {
-  margin: var(--spacing-xl) 0;
+  margin: calc(var(--spacing-xl) * 2) 0;
+}
+.hero::before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(250, 44, 211, 1) 0%,
+    rgba(222, 155, 38, 1) 55%,
+    rgba(88, 10, 189, 1) 100%
+  );
+  width: 120%;
+  height: 920px;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: -600px;
+  z-index: -1;
 }
 .hero p {
   width: 80%;
