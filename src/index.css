@@ -49,6 +49,13 @@
     #83e2ff 96.96%
   );
 }
+
+body,
+html {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
 body,
 #root {
   display: flex;
@@ -226,4 +233,34 @@ p {
 }
 .with-icon:hover > svg {
   transform: translateX(4px);
+}
+
+/*RESPONSIVE STYLES*/
+@media only screen and (max-width: 1300px) {
+  .section-container {
+    padding: 0 var(--spacing-md);
+    box-sizing: border-box;
+  }
+}
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 768px) {
+  :root {
+    --h1-size: 64px;
+    --h1-height: 72px;
+    --h3-size: 34px;
+  }
+}
+
+/*MOBILE SIZE*/
+@media only screen and (max-width: 550px) {
+  .two-column {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .two-column > .col-left,
+  .two-column > .col-right {
+    width: 100%;
+    padding: 0;
+  }
 }

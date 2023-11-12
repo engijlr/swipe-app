@@ -1,5 +1,10 @@
 .hero {
   margin: calc(var(--spacing-xl) * 2) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 .hero::before {
   content: "";
@@ -48,4 +53,11 @@
 .partners > img {
   width: 70%;
   place-self: center;
+}
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 550px) {
+  .partners {
+    grid-template-columns: 1fr 1fr;
+  }
 }

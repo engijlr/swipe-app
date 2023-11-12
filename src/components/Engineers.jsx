@@ -22,7 +22,7 @@ function Engineers() {
             Start now
             <BsArrowRight />
           </button>
-          <section className="two-column products">
+          <section className="two-column products cards-container">
             <div className="col-left card">
               <img src={tool} alt="tool icon" className="icon" />
               <h3>Tools for all stacks</h3>

@@ -41,7 +41,7 @@ function Events() {
           </div>
         </div>
       </div>
-      <div className="two-column section-container">
+      <div className="two-column section-container waiting-section">
         <div className="col-left">
           <h2>What are you waiting for?</h2>
           <p>

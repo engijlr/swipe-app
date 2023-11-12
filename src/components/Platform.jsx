@@ -8,7 +8,7 @@ import "../styles/Platform.css";
 function Platform() {
   return (
     <section className="platform">
-      <div className=" section-container">
+      <div className="section-container">
         <p className="subtitle">Unified platform</p>
         <h2>All the payment products you'll ever need</h2>
         <section className="two-column">

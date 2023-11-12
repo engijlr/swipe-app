@@ -1,8 +1,12 @@
 .why-swipe {
   padding: calc(var(--spacing-xl) * 4) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.why-swipe > section {
+.why-swipe .section-container > section {
   display: flex;
   gap: var(--spacing-md);
   margin: var(--spacing-md) 0;
@@ -10,4 +14,24 @@
 
 .why-swipe .card .secondary-text {
   color: var(--text-dark);
+}
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 768px) {
+  .why-swipe .section-container > section {
+    flex-wrap: wrap;
+  }
+  .why-swipe .section-container > section > .card {
+    width: 45%;
+  }
+}
+
+/*MOBILE SIZE*/
+@media only screen and (max-width: 550px) {
+  .why-swipe .section-container > section {
+    gap: var(--spacing-sm);
+  }
+  .why-swipe .section-container > section > .card {
+    width: 100%;
+  }
 }

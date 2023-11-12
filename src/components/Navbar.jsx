@@ -12,7 +12,7 @@ function Navbar() {
         <a href="#">Resources</a>
         <a href="#">Pricing</a>
       </section>
-      <button className="primary-button navbar-btn">Sing In</button>
+      <button className="primary-button navbar-btn">Sign In</button>
     </nav>
   );
 }

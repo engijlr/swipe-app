@@ -13,8 +13,8 @@ import "../styles/Hero.css";
 
 function Hero() {
   return (
-    <>
-      <section className="hero section-container two-column">
+    <section className="hero">
+      <div className="section-container two-column">
         <div className="col-left">
           <h1>Payments infrastructure for the world</h1>
           <p>
@@ -36,7 +36,7 @@ function Hero() {
         <div className="col-right hero-phone">
           <img src={phone} alt="hero phone image" />
         </div>
-      </section>
+      </div>
       <section className="partners section-container">
         <img src={instacart} alt="instacart logo" />
         <img src={salesforce} alt="salesforce logo" />
@@ -47,7 +47,7 @@ function Hero() {
         <img src={lyft} alt="lyft logo" />
         <img src={zoom} alt="zoom logo" />
       </section>
-    </>
+    </section>
   );
 }
 

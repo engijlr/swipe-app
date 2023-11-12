@@ -1,5 +1,5 @@
 .platform {
-  padding: var(--spacing-xl) 0;
+  padding: calc(var(--spacing-lg) * 2) 0;
   background-color: var(--bg-light);
   width: 100%;
   display: flex;
@@ -49,4 +49,26 @@
 }
 #dash {
   grid-area: dash;
+}
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 768px) {
+  .platform h2 {
+    width: 100%;
+  }
+  .platform-images {
+    gap: var(--spacing-md);
+  }
+  .platform-images > img {
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
+  }
+}
+
+/*MOBILE SIZE*/
+@media only screen and (max-width: 768px) {
+  .platform-images > img {
+    border-radius: 10px;
+  }
 }

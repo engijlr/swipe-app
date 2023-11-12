@@ -49,3 +49,27 @@
 .statistics p {
   width: 85%;
 }
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 768px) {
+  .global .statistics {
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+  }
+  .global .statistics > .card {
+    width: 45%;
+  }
+  .statistics p {
+    width: 100%;
+  }
+}
+
+/*MOBILE SIZE*/
+@media only screen and (max-width: 550px) {
+  .global .statistics > .card {
+    width: 100%;
+  }
+  .global .global-map > img {
+    opacity: 10%;
+  }
+}
