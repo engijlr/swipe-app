@@ -96,6 +96,10 @@
 
 /*MOBILE SIZE*/
 @media only screen and (max-width: 550px) {
+  .virtual-events {
+    padding: var(--spacing-xl) 0;
+    gap: calc(var(--spacing-lg) * 3);
+  }
   .virtual-events > .two-column {
     gap: var(--spacing-lg);
   }

@@ -75,6 +75,9 @@
 
 /*TABLET SIZE*/
 @media only screen and (max-width: 790px) {
+  .engineers {
+    padding: var(--spacing-xl) 0;
+  }
   .engineers .cards-container {
     flex-direction: column;
     gap: var(--spacing-md);
@@ -90,6 +93,13 @@
 
 /*MOBILE SIZE*/
 @media only screen and (max-width: 550px) {
+  .engineers {
+    padding: var(--spacing-md) 0;
+  }
+  .engineers::before {
+    height: 110%;
+    top: -70px;
+  }
   .engineers > .section-container .code-images-container {
     display: none;
   }

@@ -18,6 +18,9 @@
 
 /*TABLET SIZE*/
 @media only screen and (max-width: 768px) {
+  .why-swipe {
+    padding: calc(var(--spacing-xl) * 3) 0;
+  }
   .why-swipe .section-container > section {
     flex-wrap: wrap;
   }
@@ -28,6 +31,9 @@
 
 /*MOBILE SIZE*/
 @media only screen and (max-width: 550px) {
+  .why-swipe {
+    padding: calc(var(--spacing-xl) * 1.5) 0;
+  }
   .why-swipe .section-container > section {
     gap: var(--spacing-sm);
   }

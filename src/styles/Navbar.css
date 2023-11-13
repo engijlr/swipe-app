@@ -26,3 +26,12 @@
 .navbar .navbar-btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

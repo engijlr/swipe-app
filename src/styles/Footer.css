@@ -34,6 +34,9 @@
 
 /*MOBILE SIZE*/
 @media only screen and (max-width: 550px) {
+  .footer {
+    padding: var(--spacing-lg) 0;
+  }
   .footer .section-container {
     flex-wrap: wrap;
   }

@@ -64,11 +64,15 @@
     box-shadow: var(--standard-box-shadow);
     border-radius: 20px;
   }
+  .platform-images > img {
+    border-radius: 10px;
+  }
 }
 
 /*MOBILE SIZE*/
-@media only screen and (max-width: 768px) {
-  .platform-images > img {
-    border-radius: 10px;
+@media only screen and (max-width: 550px) {
+  .platform {
+    padding: var(--spacing-lg) 0 calc(var(--spacing-lg) * 2) 0;
+    gap: var(--spacing-lg);
   }
 }

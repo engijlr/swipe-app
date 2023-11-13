@@ -242,12 +242,18 @@ p {
     box-sizing: border-box;
   }
 }
+@media only screen and (max-width: 1113px) {
+  :root {
+    --h1-size: 75px;
+    --h1-height: 80px;
+  }
+}
 
 /*TABLET SIZE*/
 @media only screen and (max-width: 768px) {
   :root {
-    --h1-size: 64px;
-    --h1-height: 72px;
+    --h1-size: 55px;
+    --h1-height: 60px;
     --h3-size: 34px;
   }
 }
@@ -262,5 +268,8 @@ p {
   .two-column > .col-right {
     width: 100%;
     padding: 0;
+  }
+  .card .icon {
+    height: 30px;
   }
 }
